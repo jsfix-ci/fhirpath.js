@@ -1,4 +1,4 @@
-const addMinutes = require('date-fns/add_minutes');
+const addMinutes = require("date-fns/addMinutes");
 const ucumUtils = require('@lhncbc/ucum-lhc').UcumLhcUtils.getInstance();
 const numbers = require('./numbers');
 
@@ -596,14 +596,14 @@ class FP_TimeBase extends FP_Type {
  *  quantity to a date/time.
  */
 FP_TimeBase.timeUnitToAddFn = {
-  "year": require('date-fns/add_years'),
-  "month": require('date-fns/add_months'),
-  "week": require('date-fns/add_weeks'),
-  "day": require('date-fns/add_days'),
-  "hour": require('date-fns/add_hours'),
-  "minute": require('date-fns/add_minutes'),
-  "second": require('date-fns/add_seconds'),
-  "millisecond": require('date-fns/add_milliseconds')
+  "year": require("date-fns/addYears"),
+  "month": require("date-fns/addMonths"),
+  "week": require("date-fns/addWeeks"),
+  "day": require("date-fns/addDays"),
+  "hour": require("date-fns/addHours"),
+  "minute": require("date-fns/addMinutes"),
+  "second": require("date-fns/addSeconds"),
+  "millisecond": require("date-fns/addMilliseconds")
 };
 
 
